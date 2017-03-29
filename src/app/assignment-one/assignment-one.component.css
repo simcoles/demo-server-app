@@ -1,0 +1,7 @@
+button {
+  display: none;
+}
+
+button.show {
+  display: block
+}

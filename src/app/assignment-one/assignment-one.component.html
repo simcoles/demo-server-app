@@ -1,0 +1,5 @@
+<div class="col-sm-4">
+  <input [(ngModel)]="username" type="text" class="form-control">
+  <p>{{username}}</p>
+  <button [class.show]="username != ''" (click)="username = ''" class="btn btn-primary">Reset Username</button>
+</div>

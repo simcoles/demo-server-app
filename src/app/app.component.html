@@ -1,3 +1,10 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <app-cockpit (serverCreated)="onServerAdded($event)"
+               (bluePrintCreated)= "onBlueprintAdded($event)"></app-cockpit>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+      <app-server-element [element]="server" *ngFor="let server of serverElements"></app-server-element>
+    </div>
+  </div>
+</div>
